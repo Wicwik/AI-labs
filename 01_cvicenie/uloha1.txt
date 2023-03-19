@@ -1,0 +1,9 @@
+Moore:
+15 -> 36 -> 48 -> 53
+3 iteracie
+
+Von Neumann:
+15 -> 30 -> 36 -> 37 -> 48 -> 53
+15 -> 30 -> 36 -> 38 -> 46
+prva postupnost nasla globalne maximum, 6 iteracii
+druha sa zastavila na lokalnom maxime, 5 iteracii

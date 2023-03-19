@@ -1,0 +1,4 @@
+nazov, casova zlozitost, priestorova zlozitost, popis
+Alpha–beta pruning - O(b^d) - O(b^d) - redukuje graf ohodnoteny min-max algoritmom, ak je hra optimalna tak vypoctova zlozitost sa zlepsi na O(b^(b/2)). V principe nam algoritmus hovori, ze max nemusi prehladat vsetky podstromy napravo ak podstrom napravo obsahuje iba vacsie prvky. Rovnako pre min ale opacne.
+Iterative deepening depth-first search - O(b^d) - O(d) - podobny ako DFS, ale s tym ze iterativne zvysujeme maximalnu hlbku DFS
+Best first search - O(n * log n), kde n je pocet nod v strome - O(bd) - alebo informovane prehladavanie, pouzivame priority queue alebo heap, kde si uklada informacie o cene pre kazdu nodu, teda musime mat strom aj nejako ododnoteny na zaklade heuristiky

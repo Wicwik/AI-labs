@@ -1,0 +1,35 @@
+p+ => pozitivna precondition
+p- => negativna precondition
+e+ => pozitivny efekt
+e- => negativny efekt
+
+berieme do uvahy, ze jedna kocka moze byt iba na jednom mieste naraz (nemoze nastat situacia holding(X) a onTable(X))
+
+pickFromTable(X)
+p+ = {handEmpty, onTable(X), onTop(X)}
+p- = {}
+e+ = {holding(X)}
+e- = {handEmpty, onTable(X), onTop(X)}
+
+putOnTable(X)
+p+ = {holding(X)}
+p- = {handEmpty}
+e+ = {handEmpty, onTable(X), onTop(X)}
+e- = {holding(X)}
+
+stack(X,Y)
+p+ = {holding(X), onTop(Y)}
+p- = {handEmpty}
+e+ = {on(X,Y), handEmpty, onTop(X)}
+e- = {holding(X), onTop(Y)}
+
+unstack(X,Y)
+p+ = {onTop(X), on(X, Y), handEmpty}
+p- = {}
+e+ = {onTop(Y), holding(X)}
+e- = {onTop(X), on(X, Y), handEmpty}
+
+initial state: {onTable(B), onTable(A), on(C, A), onTop(B), onTop(C), handEmpty}
+final state: {onTable(C), on(B, C), on(A, B), onTop(A), handEmpty}
+
+plan: {unstack(C,A), putOnTable(C), pickFromTable(B), stack(B, C), pickFromTable(A), stack(A, B)}

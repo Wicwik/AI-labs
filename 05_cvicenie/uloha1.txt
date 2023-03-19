@@ -1,0 +1,4 @@
+odseknutia z lava do prava:
+6 sme odsekli pretoze je mensia ako 8, a max si uz mensie cislo nemoze vybrat
+4 a 9 sme odsekli, pretoze si max vyberie 16 a vieme ze min si uz vyberie 15
+25 sme odsekli z rovnakeho dovodu preco aj 4 a 9, pretoze max si vyberie 27, ktoru si uz nevyberie min
